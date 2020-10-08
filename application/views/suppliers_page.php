@@ -1,5 +1,4 @@
-
-  <section class="parallax">
+  <section class="parallax mt-5">
     <div class="container-fluid">
       <div class="row bg-half-transparent">
         <div class="col-12 my-5">
@@ -21,47 +20,6 @@
             <a href="suppliers.html" class="text-uppercase btn btn-dark mx-2 my-3">Wholesaler</a>
           </div>
         </div>
-        <!-- <div class="col-md-3 col-12"></div>
-        <div class="col-md-3 col-12 mb-5">
-          <div class="card bg-transparent border-dark">
-            <div class="card-body">
-              <div class="text-center text-stopido">
-                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-basket2" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z" />
-                  <path fill-rule="evenodd"
-                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z" />
-                </svg>
-              </div>
-              <p class="card-title text-uppercase text-center h4 my-3">
-                <strong>Bakery <br>Manufacturer</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mb-5">
-          <div class="card bg-transparent border-dark">
-            <div class="card-body">
-              <div class="text-center text-stopido">
-                <svg width="3em" height="3em" viewBox="0 0 16 17" class="bi bi-cup-straw" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M13.964 1.18a.5.5 0 0 1-.278.65l-2.255.902-.462 2.08c.375.096.714.216.971.368.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.955 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 6.132A.78.78 0 0 1 3.5 6c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 4.614 6.867 4.5 8 4.5c.712 0 1.389.045 1.985.127l.527-2.37a.5.5 0 0 1 .302-.355l2.5-1a.5.5 0 0 1 .65.279zM9.768 5.608A13.991 13.991 0 0 0 8 5.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 6c.146.073.362.15.648.222C5.967 6.39 6.924 6.5 8 6.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756a5.513 5.513 0 0 0 1.325-.297l-.845 8.03c-.013.12-.06.185-.102.214-.357.249-1.167.69-2.438.69-1.27 0-2.08-.441-2.438-.69-.041-.029-.09-.094-.102-.214l-.845-8.03c.137.046.283.088.435.126.774.194 1.817.308 2.95.308.742 0 1.445-.049 2.06-.137zm-5.593-1.48s.003.002.005.006l-.005-.006zm7.066 0l-.005.006a.026.026 0 0 1 .005-.006zM11.354 6a3.282 3.282 0 0 1-.703.235l.1-.446c.264.069.464.142.603.211z" />
-                </svg>
-              </div>
-              <p class="card-title text-uppercase text-center h4 my-3">
-                <strong>Dairy <br>Manufacturer</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12"></div>
-        <div class="col-12">
-          <div class="text-center mb-5">
-            <a href="suppliers.html" class="btn btn-outline-dark mx-auto">Know more</a>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
@@ -219,27 +177,27 @@
               <form>
                 <div class="form-group">
                   <label for="">First Name</label>
-                  <input type="text" class="form-control" placeholder="Enter your first name">
+                  <input type="text" class="form-control shadow-none" placeholder="Enter your first name">
                 </div>
                 <div class="form-group">
                   <label for="">Middle Name</label>
-                  <input type="text" class="form-control" placeholder="Enter your middle name">
+                  <input type="text" class="form-control shadow-none" placeholder="Enter your middle name">
                 </div>
                 <div class="form-group">
                   <label for="">Last Name</label>
-                  <input type="text" class="form-control" placeholder="Enter your last name">
+                  <input type="text" class="form-control shadow-none" placeholder="Enter your last name">
                 </div>
                 <div class="form-group">
                   <label for="">Business Name (Optional)</label>
-                  <input type="text" class="form-control" placeholder="business name">
+                  <input type="text" class="form-control shadow-none" placeholder="business name">
                 </div>
                 <div class="form-group">
                   <label for="">Mobile</label>
-                  <input type="tel" class="form-control" placeholder="Enter your mobile number">
+                  <input type="tel" class="form-control shadow-none" placeholder="Enter your mobile number">
                 </div>
                 <div class="form-group">
                   <label for="">Email</label>
-                  <input type="email" class="form-control" placeholder="Enter your email" required="">
+                  <input type="email" class="form-control shadow-none" placeholder="Enter your email" required="">
                 </div>
               </form>
             </div>
@@ -251,7 +209,7 @@
               <form>
                 <div class="form-group">
                   <label for="">Select City</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Delhi</option>
                     <option>Mumbai</option>
                     <option>Chennai</option>
@@ -260,7 +218,7 @@
                 </div>
                 <div class="form-group">
                   <label for="">Select Category</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Food Beverage</option>
                     <option>Clothes</option>
                     <option>Sarees</option>
@@ -272,14 +230,14 @@
                 </div>
                 <div class="form-group">
                   <label for="">Are you a</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Manufacturer</option>
                     <option>Wholesaler</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="">Products category you've</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Upto 5</option>
                     <option>20</option>
                     <option>50</option>
@@ -289,7 +247,7 @@
                 </div>
                 <div class="form-group">
                   <label for="">Price range for your products</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Upto 250</option>
                     <option>250 - 500</option>
                     <option>500 - 750</option>
@@ -298,7 +256,7 @@
                 </div>
                 <div class="form-group">
                   <label for="">How Did You Know About STOPIDO?</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Social Media</option>
                     <option>Referral & Friends</option>
                     <option>Others</option>
@@ -309,7 +267,7 @@
           </div>
         </div>
         <div class="col-12 text-center">
-          <button type="submit" class="text-uppercase btn btn-outline-dark px-5">Submit</button>
+          <button type="submit" class="text-uppercase shadow-none btn btn-outline-dark px-5">Submit</button>
         </div>
       </div>
     </div>

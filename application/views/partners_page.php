@@ -1,5 +1,5 @@
 
-  <section class="parallax">
+  <section class="parallax mt-5">
     <div class="container-fluid">
       <div class="row bg-half-transparent">
         <div class="col-12 mt-4 mb-5">
@@ -333,19 +333,19 @@
               <form>
                 <div class="form-group">
                   <label for="">First Name</label>
-                  <input type="text" class="form-control" placeholder="Enter your first name">
+                  <input type="text" class="form-control shadow-none" placeholder="Enter your first name">
                 </div>
                 <div class="form-group">
                   <label for="">Middle Name</label>
-                  <input type="text" class="form-control" placeholder="Enter your middle name">
+                  <input type="text" class="form-control shadow-none" placeholder="Enter your middle name">
                 </div>
                 <div class="form-group">
                   <label for="">Last Name</label>
-                  <input type="text" class="form-control" placeholder="Enter your last name">
+                  <input type="text" class="form-control shadow-none" placeholder="Enter your last name">
                 </div>
                 <div class="form-group">
                   <label for="">Mobile</label>
-                  <input type="tel" class="form-control" placeholder="Your mobile number">
+                  <input type="tel" class="form-control shadow-none" placeholder="Your mobile number">
                 </div>
               </form>
             </div>
@@ -357,11 +357,11 @@
               <form>
                 <div class="form-group">
                   <label for="">Email</label>
-                  <input type="email" class="form-control" placeholder="Enter your email" required="">
+                  <input type="email" class="form-control shadow-none" placeholder="Enter your email" required="">
                 </div>
                 <div class="form-group">
                   <label for="">Select City</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Delhi</option>
                     <option>Mumbai</option>
                     <option>Chennai</option>
@@ -370,7 +370,7 @@
                 </div>
                 <div class="form-group">
                   <label for="">Occupation</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Housewife</option>
                     <option>Retired Person</option>
                     <option>Student</option>
@@ -381,7 +381,7 @@
                 </div>
                 <div class="form-group">
                   <label for="">How Did You Know About STOPIDO?</label>
-                  <select class="form-control" id="">
+                  <select class="form-control shadow-none" id="">
                     <option>Social Media</option>
                     <option>Referral & Friends</option>
                     <option>Others</option>
@@ -392,7 +392,7 @@
           </div>
         </div>
         <div class="col-12 text-center">
-          <button type="submit" class="text-uppercase btn btn-outline-dark px-5">Submit</button>
+          <button type="submit" class="text-uppercase shadow-none btn btn-outline-dark px-5">Submit</button>
         </div>
       </div>
     </div>

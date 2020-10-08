@@ -129,7 +129,7 @@
             </span>
           </p>
           <div class="text-center">
-            <a href="view/about.html" class="btn btn-dark shadow-none">Know more</a>
+            <a href="<?php echo base_url(); ?>index.php/welcome/about_us" class="btn btn-dark shadow-none">Know more</a>
           </div>
         </div>
       </div>
@@ -231,13 +231,13 @@
           </div>
           <h2 class="text-center h3 my-4">Who can list their Products for sale in STOPIDO</h2>
           <div class="text-center my-3">
-            <a href="view/suppliers.html" class="text-uppercase btn btn-dark mx-2 my-3">Manufacturer</a>
-            <a href="view/suppliers.html" class="text-uppercase btn btn-dark mx-2 my-3">Wholesaler</a>
+            <a href="<?php echo base_url(); ?>index.php/welcome/suppliers" class="text-uppercase btn btn-dark mx-2 my-3">Manufacturer</a>
+            <a href="<?php echo base_url(); ?>index.php/welcome/suppliers" class="text-uppercase btn btn-dark mx-2 my-3">Wholesaler</a>
           </div>
         </div>
         <div class="col-12">
           <div class="text-center mb-5">
-            <a href="view/suppliers.html" class="btn btn-outline-dark mx-auto">Know more</a>
+            <a href="<?php echo base_url(); ?>index.php/welcome/suppliers" class="btn btn-outline-dark mx-auto">Know more</a>
           </div>
         </div>
       </div>

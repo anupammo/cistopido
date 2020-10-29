@@ -1,4 +1,4 @@
-  <section class="parallax mt-5">
+  <section class="parallax">
     <div class="container-fluid">
       <div class="row bg-half-transparent">
         <div class="col-12 my-5">

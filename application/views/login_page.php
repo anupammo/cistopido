@@ -45,22 +45,32 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-12 mt-5">
-                <div class="card border-dark">
-                    <div class="card-body mx-5 px-5 my-3">
-                        <form>
+            <div class="col-md-6 col-12 mt-3">
+                <div class="card border-0 shadow">
+                    <div class="card-body px-5">
+                        <form method="POST" action="<?php echo base_url(); ?>index.php/welcome/login_func">
                             <div class="form-group">
-                                <label for="InputEmail1">Email / Mobile</label>
-                                <input type="text" class="form-control border-dark" placeholder="Email / Mobile"
-                                    required="">
+                                <!-- <label for="AcType">Select Account Type</label> -->
+                                <!-- <input type="text" class="form-control border-dark shadow" placeholder="Email / Mobile"
+                                    required=""> -->
+                                <select class="form-control border-dark shadow-none" name="actype" id="">
+                                    <option selected disabled>Select Account Type</option>
+                                    <option value="partner">Partner</option>
+                                    <option value="supplier">Supplier</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="InputEmail">Email / Mobile</label>
+                                <input type="text" class="form-control border-dark shadow-none" placeholder="Email / Mobile"
+                                    required name="user">
                             </div>
                             <div class="form-group">
                                 <label for="InputPassword">Password</label>
-                                <input type="password" class="form-control border-dark" placeholder="Password"
-                                    required="">
+                                <input type="password" class="form-control border-dark shadow-none" placeholder="Password"
+                                    required name="pass">
                             </div>
                             <button type="submit"
-                                class="text-uppercase btn btn-block btn-outline-white bg-stopido">Login</button>
+                                class="text-uppercase text-white btn btn-block btn-outline-white bg-stopido shadow-none">Login</button>
                         </form>
                     </div>
                 </div>

@@ -82,7 +82,7 @@ class Welcome extends CI_Controller
 	{
 		$this->load->view('head_part');
 		$this->load->view('nav_part');
-		$this->load->view('header_banner_part');
+		// $this->load->view('header_banner_part');
 		$this->load->view('partners_page');
 		$this->load->view('footer_part');
 		$this->load->view('below_footer');
@@ -92,7 +92,7 @@ class Welcome extends CI_Controller
 	{
 		$this->load->view('head_part');
 		$this->load->view('nav_part');
-		$this->load->view('header_banner_part');
+		// $this->load->view('header_banner_part');
 		$this->load->view('suppliers_page');
 		$this->load->view('footer_part');
 		$this->load->view('below_footer');
@@ -123,6 +123,37 @@ class Welcome extends CI_Controller
 		$this->load->view('login_page');
 		$this->load->view('footer_part');
 		$this->load->view('below_footer');
+	}
+	public function login_func()
+	{
+		$partner_login = array(
+			'ac_type' 		=> $this->input->post('actype'),
+			'partner_mail' 	=> $this->input->post('user'),
+			'partner_pass' 	=> $this->input->post('pass')
+		);
+		$actype = $partner_login['ac_type'];
+		if ( $actype == 'partner' ) {
+			$data = $this->partner_reg->login_partner($partner_login['partner_mail'], $partner_login['partner_pass']);
+			if ($data) {
+				$this->session->set_userdata('partner_mail', $data['partner_mail']);
+				$this->input->post($data['partner_mail']);
+				$this->partners();
+			} else {
+				$this->login();
+			}
+		} elseif ( $actype == 'supplier' ) {
+			$data = $this->supplier_reg->login_supplier($partner_login['partner_mail'], $partner_login['partner_pass']);
+			if ($data) {
+				$this->session->set_userdata('supplier_mail', $data['supplier_mail']);
+				$this->input->post($data['supplier_mail']);
+				$this->suppliers();
+			} else {
+				$this->login();
+			}
+		} else {
+			$this->index();
+		}
+		
 	}
 	public function career()
 	{

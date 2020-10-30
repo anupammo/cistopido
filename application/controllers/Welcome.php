@@ -82,21 +82,35 @@ class Welcome extends CI_Controller
 	{
 		$this->load->view('head_part');
 		$this->load->view('nav_part');
-		// $this->load->view('header_banner_part');
 		$this->load->view('partners_page');
 		$this->load->view('footer_part');
 		$this->load->view('below_footer');
 		$this->load->model('Partner_reg');
 	}
+	public function partner_profile()
+	{
+		$this->load->view('head_part');
+		$this->load->view('partner_nav');
+		$this->load->view('partner_page');
+		$this->load->view('footer_part');
+		$this->load->view('below_footer');
+	}
 	public function suppliers()
 	{
 		$this->load->view('head_part');
 		$this->load->view('nav_part');
-		// $this->load->view('header_banner_part');
 		$this->load->view('suppliers_page');
 		$this->load->view('footer_part');
 		$this->load->view('below_footer');
 		$this->load->model('Supplier_reg');
+	}
+	public function supplier_profile()
+	{
+		$this->load->view('head_part');
+		$this->load->view('supplier_nav');
+		$this->load->view('supplier_page');
+		$this->load->view('footer_part');
+		$this->load->view('below_footer');
 	}
 	public function customer_reg()
 	{
@@ -137,7 +151,7 @@ class Welcome extends CI_Controller
 			if ($data) {
 				$this->session->set_userdata('partner_mail', $data['partner_mail']);
 				$this->input->post($data['partner_mail']);
-				$this->partners();
+				$this->partner_profile();
 			} else {
 				$this->login();
 			}
@@ -146,7 +160,7 @@ class Welcome extends CI_Controller
 			if ($data) {
 				$this->session->set_userdata('supplier_mail', $data['supplier_mail']);
 				$this->input->post($data['supplier_mail']);
-				$this->suppliers();
+				$this->supplier_profile();
 			} else {
 				$this->login();
 			}

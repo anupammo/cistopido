@@ -2,7 +2,7 @@
   <header>
     <div class="container px-sm-0">
       <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
-        <a class="navbar-brand py-0" href="">
+        <a class="navbar-brand py-0" href="<?php echo base_url(); ?>">
           <img src="<?php echo base_url(); ?>content/photo/stopido_only_quality_brand_logo.png" alt="stopido only quality brand logo" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

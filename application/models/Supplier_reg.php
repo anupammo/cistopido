@@ -22,4 +22,19 @@ class Supplier_reg extends CI_Model
 
 	}
 	
+	public function forget_supplier( $suppliermail, $suppliertel ) {
+
+		$this->db->select( '*' );
+		$this->db->from( 'supplier' );
+		$this->db->where( 'supplier_mail', $suppliermail );
+		$this->db->where( 'supplier_tel', $suppliertel );
+
+		if ( $query = $this->db->get() ) {
+			return $query->row_array();
+		} else {
+			return false;
+		}
+
+	}
+	
 }

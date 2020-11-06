@@ -1,3 +1,9 @@
+<?php 
+$supplier_bnm = $this->session->userdata('supplier_bnm');
+if (!$supplier_bnm) {
+    redirect('welcome/login');
+}
+?>
 <body>
   <header>
     <div class="container px-sm-0">
@@ -21,12 +27,14 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Tendril
+                <?php 
+                  echo $supplier_bnm;
+                ?>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="supplier_profile.html">Account Details</a>
-                <a class="dropdown-item" href="#">Share</a>
-                <a class="dropdown-item" href="#">Logout</a>
+                <!-- <a class="dropdown-item" href="#">Share</a> -->
+                <a class="dropdown-item" href="<?php echo base_url(); ?>index.php/welcome/supplier_logout">Logout</a>
               </div>
             </li>
           </ul>

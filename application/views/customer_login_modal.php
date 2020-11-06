@@ -1,5 +1,5 @@
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" data-backdrop="static" data-keyboard="false" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -9,30 +9,29 @@
           </button>
         </div>
         <div class="modal-body">
-          <form>
+          <form method="POST" action="<?php echo base_url(); ?>index.php/welcome/customer_login">
             <div class="form-group">
               <!-- <label for="exampleInputEmail1">Email address</label> -->
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Email/Mobile">
+              <input type="email" class="form-control shadow-none" id="Email" name="user" aria-describedby="emailHelp" placeholder="Email/Mobile">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <!-- <label for="exampleInputPassword1">Password</label> -->
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <input type="password" class="form-control shadow-none" id="Password" name="pass" placeholder="Password">
             </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <!-- <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input shadow-none" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Remember me</label>
-            </div>
-            <!-- <button type="submit" class="btn btn-primary float-right">Submit</button> -->
+            </div> -->
             <div class="form-group">
-              <a href="<?php echo base_url(); ?>index.php/welcome/cart" class="btn btn-warning px-5">Submit</a>
+              <button type="submit" class="btn btn-warning shadow-none px-5">Submit</button>
+              <!-- <a href="" class="btn btn-warning shadow-none px-5">Submit</a> -->
             </div>
           </form>
           <p>
-            <a href="" class="btn">Forgot Password?</a>
+            <a href="<?php echo base_url(); ?>index.php/welcome/recover_password" class="btn shadow-none py-0">Forgot Password?</a>
             <br>
-            <a href="customer_reg.html" class="btn">New user, create account</a>
+            <a href="<?php echo base_url(); ?>index.php/welcome/customer_registration" class="btn shadow-none py-0">New user, create account</a>
           </p>
         </div>
       </div>

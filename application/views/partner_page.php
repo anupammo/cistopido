@@ -1,3 +1,11 @@
+<?php
+$partner_fnm = $this->session->userdata('partner_fnm');
+$partner_lnm = $this->session->userdata('partner_lnm');
+$partner_occu = $this->session->userdata('partner_occu');
+if (!$partner_fnm) {
+    redirect('welcome/login');
+}
+?>
 <section class="bg-stopido-half py-5">
     <div class="container">
       <div class="row">
@@ -9,9 +17,9 @@
         <div class="col-md-9 col-8 ">
           <h1 class="h1">Increase your sale with STOPIDO !!</h1>
           <h2 class="h2 text-stopido mt-1">
-            <span>M Srivani</span>
+            <span><?php echo $partner_fnm." ".$partner_lnm;?></span>
             <small class="h5 text-dark">
-              <strong>Housewife</strong>
+              <strong><?php echo $partner_occu;?></strong>
             </small>
             </h1>
             <p class="">

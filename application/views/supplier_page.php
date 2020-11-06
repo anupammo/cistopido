@@ -1,3 +1,10 @@
+<?php
+$supplier_bnm = $this->session->userdata('supplier_bnm');
+$supplier_prod_category = $this->session->userdata('supplier_prod_category');
+if (!$supplier_bnm) {
+    redirect('welcome/login');
+}
+?>
 <section class="bg-stopido-half py-5">
     <div class="container">
       <div class="row">
@@ -9,9 +16,9 @@
         <div class="col-md-9 col-8 ">
           <h1 class="h2">Increase your sale with STOPIDO !!</h1>
           <h2 class="h2 text-stopido mt-1">
-            <span class="text-uppercase">Tendril</span>
+            <span class="text-uppercase"><?php echo $supplier_bnm;?></span>
             <small class="h5 text-dark">
-            <strong>Tea Products</strong>
+            <strong><?php echo $supplier_prod_category;?></strong>
           </small>
         </h2>
         <p class="">

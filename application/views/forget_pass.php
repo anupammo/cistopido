@@ -48,31 +48,32 @@
             <div class="col-md-6 col-12 mt-3">
                 <div class="card border-0 shadow">
                     <div class="card-body px-5">
-                        <form method="POST" action="<?php echo base_url(); ?>index.php/welcome/login_func">
+                        <form method="POST" action="<?php echo base_url(); ?>index.php/welcome/forget_func">
                             <div class="form-group">
-                                <label for="AcType">Select Account Type</label>
+                                <label for="AcType" class="text-stopido">
+                                    <strong>Verify details to recover your password</strong>
+                                </label>
                                 <!-- <input type="text" class="form-control border-dark shadow" placeholder="Email / Mobile"
                                     required=""> -->
-                                <select class="form-control border-dark shadow-none" name="actype" id="">
+                                <select class="form-control border-dark shadow-none" name="ac_type" id="">
                                     <option selected disabled>Select Account Type</option>
                                     <option value="partner">Partner</option>
                                     <option value="supplier">Supplier</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="InputEmail">Email / Mobile</label>
-                                <input type="text" class="form-control border-dark shadow-none" placeholder="Email / Mobile"
-                                    required name="user">
+                                <label for="InputEmail">Registered Email</label>
+                                <input type="text" class="form-control border-dark shadow-none" placeholder="Email"
+                                    required name="user_mail">
                             </div>
                             <div class="form-group">
-                                <label for="InputPassword">Password</label>
-                                <input type="password" class="form-control border-dark shadow-none" placeholder="Password"
-                                    required name="pass">
+                                <label for="InputPassword">Registered Mobile</label>
+                                <input type="tel" class="form-control border-dark shadow-none" placeholder="Mobile"
+                                    required name="user_tel">
                             </div>
                             <button type="submit"
-                                class="text-uppercase text-white btn btn-block btn-outline-white bg-stopido shadow-none">Login</button>
+                                class="text-uppercase text-white btn btn-block btn-outline-white bg-stopido shadow-none">Recover Password</button>
                         </form>
-                        <p><a href="<?php echo base_url(); ?>index.php/welcome/forget_password" class="btn shadow-none px-0 pt-3">Forgot Password?</a></p>
                     </div>
                 </div>
             </div>

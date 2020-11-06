@@ -41,22 +41,22 @@
                             <div class="form-group col-md-6 col-12">
                                 <label for="">Select City</label>
                                 <select class="form-control shadow-none" id="" name="customer_ct">
-                                    <option>Delhi</option>
-                                    <option>Mumbai</option>
-                                    <option>Chennai</option>
-                                    <option>Kolkat</option>
+                                    <!-- <option>Delhi</option>
+                                    <option>Mumbai</option> -->
+                                    <option>Bangalore</option>
+                                    <option>Kolkata</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-6 col-12">
                                 <label for="">Select State</label>
                                 <select class="form-control shadow-none" id="" name="customer_state">
                                     <option>Karnataka</option>
-                                    <option>Kerala</option>
+                                    <!-- <option>Kerala</option>
                                     <option>Maharashtra</option>
                                     <option>Tamil Nadu</option>
                                     <option>Punjab</option>
                                     <option>Rajasthan</option>
-                                    <option>Gujarat</option>
+                                    <option>Gujarat</option> -->
                                     <option>West Bengal</option>
                                 </select>
                             </div>

@@ -1,3 +1,9 @@
+<?php 
+$partner_fnm = $this->session->userdata('partner_fnm');
+if (!$partner_fnm) {
+    redirect('welcome/login');
+}
+?>
 <body>
   <header>
     <div class="container px-sm-0">
@@ -21,12 +27,14 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Srivani
+                <?php 
+                  echo $partner_fnm;
+                ?>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="partner_profile.html">Account Details</a>
-                <a class="dropdown-item" href="#">Share</a>
-                <a class="dropdown-item" href="#">Logout</a>
+                <!-- <a class="dropdown-item" href="#">Share</a> -->
+                <a class="dropdown-item" href="<?php echo base_url(); ?>index.php/welcome/partner_logout">Logout</a>
               </div>
             </li>
           </ul>
